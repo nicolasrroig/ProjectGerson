@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+
+  <!-- TÍTULO DE LA PÁGINA (lo que aparece en la pestaña del navegador) -->
+  <title>GERSON STORE</title>
+
+  <!--Link para agregar Boostrap 5 al proyecto-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- LINK A LOS ESTILOS CSS (SIEMPRE VA DENTRO DEL HEAD) -->
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header>
+
+    <!-- ================= FILA SUPERIOR ================= -->
+    <div class="topbar">
+
+      <!-- LOGO -->
+      <div class="logo">
+        <!-- 📌 REEMPLAZAR POR TU LOGO -->
+
+        <a class="navbar-brand" href="#">
+          <img src="assets/Gerson.Blue.Rectangulo.png" alt="Gerson">
+        </a>
+      </div>
+
+      <!-- BUSCADOR -->
+      <div class="search">
+        <input type="text" placeholder="¿Qué estás buscando?">
+      </div>
+
+      <!-- ICONOS DERECHA -->
+      <div class="icons">
+        <span>Mi Cuenta</span>
+        <span>Carrito</span>
+      </div>
+
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary position-fixed w-100 z-3">
+      <div class="container-fluid">
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Camisetas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Relojes</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- ================= MENÚ ================= -->
+    <!--
+    <nav class="menu">
+      <a href="#">Todos</a>
+      <a href="#">Remeras</a>
+      <a href="#">Pantalones</a>
+      <a href="#">Accesorios</a>
+    </nav>
+    -->
+
+  </header>
+
+  <!-- ================= HERO (PORTADA PRINCIPAL) ================= -->
+  <section class="hero">
+
+    <h2>Estilo Argentino</h2>
+    <p>Ropa y accesorios para hombre</p>
+
+  </section>
+
+  <!-- ================= PRODUCTOS ================= -->
+  <section class="productos">
+
+    <!-- ================= PRODUCTO 1 ================= -->
+    <div class="card">
+
+      <!-- 📌 ACÁ VA LA IMAGEN DE MESSI -->
+      <!-- Reemplazar por tu imagen -->
+      <img src="assets/Messi.Espalda.png" alt="Camiseta Messi">
+
+      <h3>Camiseta Argentina Messi</h3>
+      <p>$70.000</p>
+
+    </div>
+
+    <!-- ================= PRODUCTO 2 ================= -->
+    <div class="card">
+
+      <!-- 📌 ACÁ VA LA IMAGEN DE JULIÁN ÁLVAREZ -->
+      <img src="/assets/Julian.Frente.png" alt="Camiseta Julián">
+
+      <h3>Camiseta Argentina Julián</h3>
+      <p>$70.000</p>
+
+    </div>
+
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <p>© 2026 GERSON ARGENTINA</p>
+  </footer>
+  <!--Script con funcionalidades para no necesitar javascript,
+ siempre va antes del cierre del body por si es pesado
+  no joda el resto del proyecto-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

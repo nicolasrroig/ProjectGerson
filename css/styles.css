@@ -1,0 +1,159 @@
+/* RESET BÁSICO */
+body {
+  font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* ================= HEADER ================= */
+.header {
+  display: flex; 
+  /* FLEXBOX ACTIVA EL MODO FLEXIBLE */
+
+  justify-content: space-between; 
+  /* SEPARA LOS ELEMENTOS: UNO A LA IZQUIERDA Y OTRO A LA DERECHA */
+
+  align-items: center; 
+  /* CENTRA LOS ELEMENTOS VERTICALMENTE */
+
+  padding: 20px;
+  background: #4b4b9f; /* COLOR AZUL COMO TU LOGO */
+  color: white;
+}
+
+/* ================= TOPBAR ================= */
+.topbar {
+  display: flex;
+
+  justify-content: space-between;
+  /* separa izquierda - centro - derecha */
+
+  align-items: center;
+  /* centra vertical */
+
+  padding: 15px 30px;
+
+  background: #0b1f3a; /* podés cambiar por tu azul #4b4b9f*/
+}
+
+/* LOGO */
+.logo img {
+  display: ;
+  height: 80px;
+  /* 🔥 ACÁ AGRANDÁS EL LOGO (probá 60, 70, 80) */
+}
+
+/* BUSCADOR */
+.search {
+  flex: 1;
+  /* ocupa todo el espacio disponible */
+
+  display: flex;
+  justify-content: center;
+}
+
+.search input {
+  width: 60%;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+}
+
+/* ICONOS */
+.icons {
+  display: flex;
+  gap: 20px;
+  color: white;
+}
+
+/* ================= MENÚ ================= */
+.menu {
+  display: flex;
+  justify-content: center;
+
+  gap: 25px;
+
+  background: #49499b;
+  padding: 6px;
+}
+
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+.header nav a {
+  margin-left: 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* ================= HERO ================= */
+.hero {
+  height: 400px;
+
+  /* COLOR PRINCIPAL DE TU MARCA */
+  background: #0b1f3a;
+
+  color: #ffffff;
+
+  display: flex;
+
+  flex-direction: column; 
+  /* CAMBIA LA DIRECCIÓN A COLUMNA (UNO ABAJO DEL OTRO) */
+
+  justify-content: center; 
+  /* CENTRA EN VERTICAL */
+
+  align-items: center; 
+  /* CENTRA EN HORIZONTAL */
+}
+
+/* ================= PRODUCTOS ================= */
+.productos {
+  display: flex;
+
+  justify-content: center; 
+  /* CENTRA LAS CARDS */
+
+  gap: 20px; 
+  /* ESPACIO ENTRE PRODUCTOS */
+
+  padding: 40px;
+
+  flex-wrap: wrap; 
+  /* PERMITE QUE BAJEN A OTRA FILA (RESPONSIVE) */
+}
+
+.card {
+  width: 250px;
+
+  border: 1px solid #ddd;
+
+  text-align: center;
+
+  padding: 15px;
+
+  transition: 0.3s;
+  /* SUAVIZA EFECTOS (HOVER) */
+}
+
+/* EFECTO CUANDO PASÁS EL MOUSE */
+.card:hover {
+  transform: scale(1.05);
+  /* AGRANDA UN POCO */
+}
+
+.card img {
+  width: 100%;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111111;
+  color: #ffffff;
+}
