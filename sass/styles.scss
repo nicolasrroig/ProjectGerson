@@ -1,0 +1,208 @@
+@use "./layout/header";
+@use "./layout/main";
+
+/* ================= VARIABLES ================= */
+
+/* COLOR PRINCIPAL DE TU MARCA */
+$color-principal: #0b1f3a;
+
+/* COLOR SECUNDARIO */
+$color-secundario: #49499b;
+
+/* COLORES GENERALES */
+$color-blanco: #ffffff;
+$color-negro: #111111;
+$color-borde: #ddd;
+
+/* ================= RESET BÁSICO ================= */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= HEADER ================= */
+
+ /*.header {
+  display: flex;
+  /* FLEXBOX ACTIVA EL MODO FLEXIBLE 
+
+  justify-content: space-between;
+  /* SEPARA LOS ELEMENTOS: UNO A LA IZQUIERDA Y OTRO A LA DERECHA 
+
+  align-items: center;
+  /* CENTRA LOS ELEMENTOS VERTICALMENTE 
+
+  padding: 20px;
+
+  background: $color-secundario;
+  /* COLOR AZUL COMO TU LOGO 
+
+  color: $color-blanco;
+
+
+  nav {
+    a {
+      margin-left: 20px;
+      color: $color-blanco;
+      text-decoration: none;
+    }
+  }
+} */
+
+/* ================= TOPBAR ================= */
+
+.topbar {
+  display: flex;
+
+  justify-content: space-between;
+  /* SEPARA IZQUIERDA - CENTRO - DERECHA */
+
+  align-items: center;
+  /* CENTRA VERTICALMENTE */
+
+  padding: 15px 30px;
+
+  background: $color-principal;
+  /* PODÉS CAMBIAR POR TU AZUL #4b4b9f */
+
+  /* ================= LOGO ================= */
+
+  .logo {
+    img {
+      display: cover;
+      height: 80px;
+
+      /* 🔥 ACÁ AGRANDÁS EL LOGO (PROBÁ 60, 70, 80) */
+    }
+  }
+
+  /* ================= BUSCADOR ================= */
+
+  .search {
+    flex: 1;
+    /* OCUPA TODO EL ESPACIO DISPONIBLE */
+
+    display: flex;
+    justify-content: center;
+
+    input {
+      width: 60%;
+      padding: 10px;
+
+      border-radius: 20px;
+      border: none;
+    }
+  }
+
+  /* ================= ICONOS ================= */
+
+  .icons {
+    display: flex;
+    gap: 20px;
+
+    color: $color-blanco;
+  }
+}
+
+/* ================= MENÚ ================= */
+
+.menu {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 25px;
+
+  background: $color-secundario;
+
+  padding: 6px;
+
+  a {
+    color: $color-blanco;
+    text-decoration: none;
+  }
+}
+
+/* ================= HERO ================= */
+
+/*
+height: 300px;
+margin-top: 150px;
+*/
+
+.hero {
+  height: calc(100vh - 160px);
+
+  /* COLOR PRINCIPAL DE TU MARCA */
+  background: $color-principal;
+
+  color: $color-blanco;
+
+  display: flex;
+
+  flex-direction: column;
+  /* CAMBIA LA DIRECCIÓN A COLUMNA (UNO ABAJO DEL OTRO) */
+
+  justify-content: center;
+  /* CENTRA EN VERTICAL */
+
+  align-items: center;
+  /* CENTRA EN HORIZONTAL */
+
+  padding-top: 100px;
+}
+
+/* ================= PRODUCTOS ================= */
+
+.productos {
+  display: flex;
+
+  justify-content: center;
+  /* CENTRA LAS CARDS */
+
+  gap: 20px;
+  /* ESPACIO ENTRE PRODUCTOS */
+
+  padding: 40px;
+
+  flex-wrap: wrap;
+  /* PERMITE QUE BAJEN A OTRA FILA (RESPONSIVE) */
+
+  .card {
+    width: 250px;
+
+    border: 1px solid $color-borde;
+
+    text-align: center;
+
+    padding: 15px;
+
+    transition: 0.3s;
+    /* SUAVIZA EFECTOS (HOVER) */
+
+    /* EFECTO CUANDO PASÁS EL MOUSE */
+    &:hover {
+      transform: scale(1.05);
+      /* AGRANDA UN POCO */
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+  text-align: center;
+
+  padding: 20px;
+
+  background: $color-negro;
+
+  color: $color-blanco;
+}

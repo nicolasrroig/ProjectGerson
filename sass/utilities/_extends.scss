@@ -1,0 +1,17 @@
+.backgroundsHeader{
+     display: flex;
+  /* FLEXBOX ACTIVA EL MODO FLEXIBLE */
+
+  justify-content: space-between;
+  /* SEPARA LOS ELEMENTOS: UNO A LA IZQUIERDA Y OTRO A LA DERECHA */
+
+  align-items: center;
+  /* CENTRA LOS ELEMENTOS VERTICALMENTE */
+
+  padding: 20px;
+
+  background: $color-secundario;
+  /* COLOR AZUL COMO TU LOGO */
+
+  color: $color-blanco;
+}

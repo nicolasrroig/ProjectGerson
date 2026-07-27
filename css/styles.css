@@ -8,6 +8,7 @@ body {
 
 /* ================= HEADER ================= */
 .header {
+ 
   display: flex; 
   /* FLEXBOX ACTIVA EL MODO FLEXIBLE */
 
@@ -39,7 +40,7 @@ body {
 
 /* LOGO */
 .logo img {
-  display: ;
+  display: cover;
   height: 80px;
   /* 🔥 ACÁ AGRANDÁS EL LOGO (probá 60, 70, 80) */
 }
@@ -90,9 +91,14 @@ body {
   text-decoration: none;
 }
 
-/* ================= HERO ================= */
+/* ================= HERO ================= 1.5px   margin-top: 150px;
+  height: 300px;*/
 .hero {
-  height: 400px;
+
+   
+   height: calc(100vh - 160px);
+  
+
 
   /* COLOR PRINCIPAL DE TU MARCA */
   background: #0b1f3a;
@@ -109,6 +115,7 @@ body {
 
   align-items: center; 
   /* CENTRA EN HORIZONTAL */
+   padding-top: 100px;
 }
 
 /* ================= PRODUCTOS ================= */

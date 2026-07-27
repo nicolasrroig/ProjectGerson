@@ -1,0 +1,16 @@
+@use "../utilities/extends";
+
+.indexHeader{
+
+    @extend .backgroundsHeader;
+     
+
+   nav {
+    a {
+      margin-left: 20px;
+      color: $color-blanco;
+      text-decoration: none;
+    }
+  }
+}
+
