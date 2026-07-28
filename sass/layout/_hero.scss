@@ -1,3 +1,28 @@
-.hero{
+/* ================= HERO: contenido principal ================= */
 
+/*
+height: 300px;
+margin-top: 150px;
+*/
+
+.hero {
+  height: calc(100vh - 160px);
+
+  /* COLOR PRINCIPAL DE TU MARCA */
+  background: $color-principal;
+
+  color: $color-blanco;
+
+  display: flex;
+
+  flex-direction: column;
+  /* CAMBIA LA DIRECCIÓN A COLUMNA (UNO ABAJO DEL OTRO) */
+
+  justify-content: center;
+  /* CENTRA EN VERTICAL */
+
+  align-items: center;
+  /* CENTRA EN HORIZONTAL */
+
+  padding-top: 100px;
 }

@@ -1,7 +1,41 @@
-.productos{
+/* ================= PRODUCTOS ================= */
 
+.productos {
+  display: flex;
+
+  justify-content: center;
+  /* CENTRA LAS CARDS */
+
+  gap: 20px;
+  /* ESPACIO ENTRE PRODUCTOS */
+
+  padding: 40px;
+
+  flex-wrap: wrap;
+  /* PERMITE QUE BAJEN A OTRA FILA (RESPONSIVE) */
+
+ 
 }
 
-.card{
+ .card {
+    width: 250px;
 
-}
+    border: 1px solid $color-borde;
+
+    text-align: center;
+
+    padding: 15px;
+
+    transition: 0.3s;
+    /* SUAVIZA EFECTOS (HOVER) */
+
+    /* EFECTO CUANDO PASÁS EL MOUSE */
+    &:hover {
+      transform: scale(1.05);
+      /* AGRANDA UN POCO */
+    }
+
+    img {
+      width: 100%;
+    }
+  }
