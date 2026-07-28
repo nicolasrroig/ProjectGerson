@@ -119,7 +119,7 @@ body {
 }
 
 /* ================= PRODUCTOS ================= */
-.productos {
+.camisetas {
   display: flex;
 
   justify-content: center; 
