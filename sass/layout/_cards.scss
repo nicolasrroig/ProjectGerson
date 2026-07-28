@@ -1,41 +1,44 @@
-/* ================= PRODUCTOS ================= */
+/* ================= Camisetas ================= */
 
-.productos {
+.camisetas {
   display: flex;
+
+   flex-wrap: wrap;
+  /* Permite que las cards bajen de fila */
 
   justify-content: center;
   /* CENTRA LAS CARDS */
 
-  gap: 20px;
+  gap: 30px;
   /* ESPACIO ENTRE PRODUCTOS */
 
   padding: 40px;
-
-  flex-wrap: wrap;
-  /* PERMITE QUE BAJEN A OTRA FILA (RESPONSIVE) */
 
  
 }
 
  .card {
-    width: 250px;
+     width:300px;
 
-    border: 1px solid $color-borde;
+    transition:.3s;
 
-    text-align: center;
+    border-radius:10px;
 
-    padding: 15px;
+    overflow:hidden;
 
-    transition: 0.3s;
-    /* SUAVIZA EFECTOS (HOVER) */
+    &:hover{
 
-    /* EFECTO CUANDO PASÁS EL MOUSE */
-    &:hover {
-      transform: scale(1.05);
-      /* AGRANDA UN POCO */
+        transform:translateY(-8px);
+
     }
 
-    img {
-      width: 100%;
+    img{
+
+        width:100%;
+
+        height:320px;
+
+        object-fit:cover;
+
     }
   }
