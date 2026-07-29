@@ -7,12 +7,18 @@
   <!-- TÍTULO DE LA PÁGINA (lo que aparece en la pestaña del navegador) -->
   <title>Gerson Store</title>
 
+  <meta name="description" content="Información para compras mayoristas de camisetas y accesorios deportivos.">
+
+  <meta name="keywords" content="mayoristas, camisetas, proveedores, argentina">
+
+
   <!--Link para agregar Boostrap 5 al proyecto-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
   <!-- LINK A LOS ESTILOS CSS (SIEMPRE VA DENTRO DEL HEAD) -->
   <link rel="stylesheet" href="../css/styles.css">
+
 </head>
 
 <body>
@@ -44,7 +50,7 @@
 
     </div>
 
-<!-- ==========================================
+    <!-- ==========================================
                 MENÚ PRINCIPAL
 ========================================== -->
 
@@ -81,14 +87,53 @@
 
     </div>
   </header>
-  
+
   <main>
- 
-        <p>
 
-            Política de cambios
+    <div class="mayorista-section">
+  <!-- Columna Izquierda: Información e Imagen -->
+  <div class="mayorista-info">
+    <h2 class="title">VENTA MAYORISTA • GERSON</h2>
+    <p class="subtitle">Precios de fábrica, reposiciones ágiles y soporte real.</p>
+    <p class="description">
+      Conocé requisitos, mínimos, talles y condiciones. Cuando estés listo,
+      completá el formulario y nuestro equipo te contacta para habilitar tu cuenta.
+    </p>
+    <div class="image-container">
+      <img src="../assets/Gerson.Blue.Rectangulo.png" alt="Local de ropa" />
+    </div>
+  </div>
 
-        </p>
+  <!-- Columna Derecha: Formulario -->
+  <div class="mayorista-form-container">
+    <h3>FORMULARIO DE ALTA MAYORISTA</h3>
+    <p class="form-subtext">Completá el formulario y te contactaremos para habilitar tu cuenta mayorista.</p>
+
+    <form class="mayorista-form">
+      <div class="form-group">
+        <label for="nombre">Nombre <span>*</span></label>
+        <input type="text" id="nombre" name="nombre" required />
+      </div>
+
+      <div class="form-group">
+        <label for="apellidos">Apellidos <span>*</span></label>
+        <input type="text" id="apellidos" name="apellidos" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email <span>*</span></label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="whatsapp">WhatsApp <span>*</span></label>
+        <input type="tel" id="whatsapp" name="whatsapp" required />
+      </div>
+
+      <button type="submit" class="btn-submit">Siguiente &rarr;</button>
+    </form>
+  </div>
+</div>
 
   </main>
 
@@ -98,11 +143,11 @@
 
     <p>
 
-        © 2026 GERSON ARGENTINA
+      © 2026 GERSON ARGENTINA
 
     </p>
 
-</footer>
+  </footer>
   <!--Script con funcionalidades para no necesitar javascript,
  siempre va antes del cierre del body por si es pesado
   no joda el resto del proyecto-->

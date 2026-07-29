@@ -1,25 +1,26 @@
 /* RESET BÁSICO */
 body {
   font-family: Arial, sans-serif;
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* ================= HEADER ================= */
 .header {
- 
-  display: flex; 
+
+  display: flex;
   /* FLEXBOX ACTIVA EL MODO FLEXIBLE */
 
-  justify-content: space-between; 
+  justify-content: space-between;
   /* SEPARA LOS ELEMENTOS: UNO A LA IZQUIERDA Y OTRO A LA DERECHA */
 
-  align-items: center; 
+  align-items: center;
   /* CENTRA LOS ELEMENTOS VERTICALMENTE */
 
   padding: 20px;
-  background: #4b4b9f; /* COLOR AZUL COMO TU LOGO */
+  background: #4b4b9f;
+  /* COLOR AZUL COMO TU LOGO */
   color: white;
 }
 
@@ -35,7 +36,8 @@ body {
 
   padding: 15px 30px;
 
-  background: #0b1f3a; /* podés cambiar por tu azul #4b4b9f*/
+  background: #0b1f3a;
+  /* podés cambiar por tu azul #4b4b9f*/
 }
 
 /* LOGO */
@@ -95,9 +97,9 @@ body {
   height: 300px;*/
 .hero {
 
-   
-   height: calc(100vh - 160px);
-  
+
+  height: calc(100vh - 160px);
+
 
 
   /* COLOR PRINCIPAL DE TU MARCA */
@@ -107,30 +109,30 @@ body {
 
   display: flex;
 
-  flex-direction: column; 
+  flex-direction: column;
   /* CAMBIA LA DIRECCIÓN A COLUMNA (UNO ABAJO DEL OTRO) */
 
-  justify-content: center; 
+  justify-content: center;
   /* CENTRA EN VERTICAL */
 
-  align-items: center; 
+  align-items: center;
   /* CENTRA EN HORIZONTAL */
-   padding-top: 100px;
+  padding-top: 100px;
 }
 
 /* ================= PRODUCTOS ================= */
 .camisetas {
   display: flex;
 
-  justify-content: center; 
+  justify-content: center;
   /* CENTRA LAS CARDS */
 
-  gap: 20px; 
+  gap: 20px;
   /* ESPACIO ENTRE PRODUCTOS */
 
   padding: 40px;
 
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   /* PERMITE QUE BAJEN A OTRA FILA (RESPONSIVE) */
 }
 
@@ -163,4 +165,285 @@ footer {
   padding: 20px;
   background: #111111;
   color: #ffffff;
+}
+
+
+.nosotros {
+
+  background: #0b1f3a;
+
+  color: #ffffff;
+
+  padding: 80px 20px;
+
+  min-height: 70vh;
+
+  height: auto;
+
+
+  .container {
+
+    max-width: 900px;
+
+    margin: auto;
+
+  }
+
+  h1 {
+
+    text-align: center;
+
+    margin-bottom: 35px;
+
+    font-size: 3rem;
+
+    font-family: "Poppins", sans-serif;
+
+  }
+
+  .frase {
+
+    text-align: center;
+
+    font-size: 1rem;
+
+    font-weight: 600;
+
+    margin-bottom: 10px;
+
+  }
+
+  p {
+
+    text-align: justify;
+
+    line-height: 1.9;
+
+    font-size: 1.1rem;
+
+    margin-bottom: 20px;
+
+  }
+
+  strong {
+
+    color: #ffffff;
+
+  }
+
+}
+
+
+.bienvenida {
+
+  text-align: center;
+
+  padding: 40px 20px;
+
+}
+
+.bienvenida h2 {
+
+  font-size: 2.5rem;
+
+  margin-bottom: 20px;
+
+  color: #0b1f3a;
+
+  font-family: "Poppins", sans-serif;
+
+}
+
+.bienvenida p {
+
+  font-size: 1.2rem;
+
+  max-width: 800px;
+
+  margin: auto;
+
+  font-family: "Poppins", sans-serif;
+
+}
+
+/* Estilo de la imagen principal */
+.hero-image {
+  width: 95vh;
+  max-width: 1200px;
+  padding-top: 200px;
+  height: auto;
+  display: block;
+  margin-bottom: 40px;
+  border-radius: 8px;
+
+}
+
+/* Estilo de los textos y títulos */
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #000000;
+}
+
+ul.conditions-list {
+  list-style-type: circle;
+  padding-left: 20px;
+  line-height: 1.8;
+  font-size: 16px;
+  color: #000000;
+}
+
+ul.conditions-list li {
+  margin-bottom: 12px;
+}
+
+
+/*------------ mayorista ------------*/
+
+.mayorista-section {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #111111;
+
+}
+}
+
+@media (min-width: 768px) {
+  .mayorista-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    align-items: start;
+  }
+}
+
+.mayorista-section .mayorista-info .title {
+  font-family: 'Impact', 'Arial Black', sans-serif;
+  font-size: 9rem;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  margin: 0 0 12px 0;
+  line-height: 1.1;
+
+   font-size:.9rem;
+    margin-bottom:8px;
+}
+
+.mayorista-section .mayorista-info .subtitle {
+ 
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.mayorista-section .mayorista-info .description {
+  
+  font-size: 0.85rem;
+  color: #555555;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.mayorista-section .mayorista-info .image-container {
+  
+  width: 100%;
+  border-radius: 12px;
+  overflow: visible;
+}
+
+.mayorista-section .mayorista-info .image-container img {
+
+  width: 100%;
+  max-height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+}
+
+.mayorista-section .mayorista-form-container h2 {
+  font-family: 'Impact', 'Arial Black', sans-serif;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin: 0 0 8px 0;
+  letter-spacing: -0.3px;
+}
+
+.mayorista-section .mayorista-form-container .form-subtext {
+  height: auto;
+  font-size: 0.85rem;
+  color: #555555;
+  margin-bottom: 24px;
+  line-height: 1.3;
+}
+
+.mayorista-section .mayorista-form-container .mayorista-form {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mayorista-section .mayorista-form-container .mayorista-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mayorista-section .mayorista-form-container .mayorista-form .form-group label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.mayorista-section .mayorista-form-container .mayorista-form .form-group label span {
+  background-color: #e1e4e8;
+  color: #666;
+  font-size: 0.7rem;
+  padding: 1px 5px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.mayorista-section .mayorista-form-container .mayorista-form .form-group input {
+  height: auto;
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+
+.mayorista-section .mayorista-form-container .mayorista-form .form-group input:focus {
+  border-color: #000;
+}
+
+.mayorista-section .mayorista-form-container .mayorista-form .btn-submit {
+
+  align-self: flex-end;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 24px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: opacity 0.2s ease;
+}
+
+.mayorista-section .mayorista-form-container .mayorista-form .btn-submit:hover {
+  opacity: 0.85;
 }

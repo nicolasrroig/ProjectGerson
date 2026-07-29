@@ -32,40 +32,9 @@
 
 @import "utilities/extends";
 
-@use "./layout/header";
-@use "./layout/main";
 
 
 
-
-/* ================= HEADER ================= */
-
- /*.header {
-  display: flex;
-  /* FLEXBOX ACTIVA EL MODO FLEXIBLE 
-
-  justify-content: space-between;
-  /* SEPARA LOS ELEMENTOS: UNO A LA IZQUIERDA Y OTRO A LA DERECHA 
-
-  align-items: center;
-  /* CENTRA LOS ELEMENTOS VERTICALMENTE 
-
-  padding: 20px;
-
-  background: $color-secundario;
-  /* COLOR AZUL COMO TU LOGO 
-
-  color: $color-blanco;
-
-
-  nav {
-    a {
-      margin-left: 20px;
-      color: $color-blanco;
-      text-decoration: none;
-    }
-  }
-} */
 
 
 
