@@ -1,20 +1,13 @@
 /* ================= Camisetas ================= */
-
 .camisetas {
     display: flex;
-
     flex-wrap: wrap;
     /* Permite que las cards bajen de fila */
-
     justify-content: center;
     /* CENTRA LAS CARDS */
-
     gap: 30px;
     /* ESPACIO ENTRE PRODUCTOS */
-
     padding: 40px;
-
-
 }
 
 .card {
@@ -27,18 +20,13 @@
     overflow: hidden;
 
     &:hover {
-
         transform: translateY(-8px);
-
     }
-
     img {
-
         width: 100%;
 
         height: 320px;
 
         object-fit: cover;
-
     }
 }

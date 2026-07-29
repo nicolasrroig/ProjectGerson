@@ -1,1 +1,14 @@
-.camisetas {}
+.camisetas {
+  display: flex;
+
+  justify-content: center;
+  /* CENTRA LAS CARDS */
+
+  gap: 20px;
+  /* ESPACIO ENTRE PRODUCTOS */
+
+  padding: 40px;
+
+  flex-wrap: wrap;
+  /* PERMITE QUE BAJEN A OTRA FILA (RESPONSIVE) */
+}

@@ -1,10 +1,31 @@
-/* ==========================================
-            BIENVENIDA
-========================================== */
+/* ============= BIENVENIDA ============= */
 
-.bienvenida *{
+.bienvenida {
 
+  text-align: center;
 
+  padding: 40px 20px;
+}
 
+.bienvenida h2 {
+
+  font-size: 2.5rem;
+
+  margin-bottom: 20px;
+
+  color: #0b1f3a;
+
+  font-family: "Poppins", sans-serif;
+}
+
+.bienvenida p {
+
+  font-size: 1.2rem;
+
+  max-width: 800px;
+
+  margin: auto;
+
+  font-family: "Poppins", sans-serif;
 }
 

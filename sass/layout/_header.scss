@@ -1,32 +1,13 @@
 /* =========== HEADER ============ */
 
-/*
-El Header es la parte superior de la página.
-
-En este proyecto contiene:
-
-✔ Logo
-✔ Buscador
-✔ Mi Cuenta
-✔ Carrito
-
-Utilizamos Flexbox para distribuir los elementos
-horizontalmente.
-
-Este archivo solo contiene estilos del encabezado.
-*/
-
-
-
-
 @use "../utilities/extends";
 
-.indexHeader{
+.indexHeader {
 
-    @extend .backgroundsHeader;
-     
+  @extend .backgroundsHeader;
 
-   nav {
+
+  nav {
     a {
       margin-left: 20px;
       color: $color-blanco;
@@ -35,9 +16,7 @@ Este archivo solo contiene estilos del encabezado.
   }
 }
 
-
-
-  /* ================= TOPBAR ================= */
+/* ================= TOPBAR ================= */
 
 .topbar {
   display: flex;
@@ -52,16 +31,12 @@ Este archivo solo contiene estilos del encabezado.
 
   background: $color-principal;
   /* PODÉS CAMBIAR POR TU AZUL #4b4b9f */
-
-  
-
 }
-
 
 /* ================= LOGO ================= */
 
-.logo{
-    .logo {
+.logo {
+  .logo {
     img {
       display: cover;
       height: 80px;
@@ -72,35 +47,31 @@ Este archivo solo contiene estilos del encabezado.
 
 }
 
+/* ================= BUSCADOR ================= */
 
-  /* ================= BUSCADOR ================= */
+.search {
+  flex: 1;
+  /* OCUPA TODO EL ESPACIO DISPONIBLE */
 
-  .search {
-    flex: 1;
-    /* OCUPA TODO EL ESPACIO DISPONIBLE */
+  display: flex;
+  justify-content: center;
 
-    display: flex;
-    justify-content: center;
+  input {
+    width: 60%;
+    padding: 10px;
 
-    input {
-      width: 60%;
-      padding: 10px;
-
-      border-radius: 20px;
-      border: none;
-    }
+    border-radius: 20px;
+    border: none;
   }
+}
 
+/* ================= ICONOS ================= */
+.icons {
+  display: flex;
+  gap: 20px;
 
-  /* ================= ICONOS ================= */
-
-  .icons {
-    display: flex;
-    gap: 20px;
-
-    color: $color-blanco;
-  }
-
+  color: $color-blanco;
+}
 
 /* ================= MENÚ ================= */
 
